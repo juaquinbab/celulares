@@ -187,7 +187,8 @@ client.on('message', async (message) => {
      } else if (message.body.toLowerCase() === "si" ) {
         // Verificar si el mensaje tiene más de 2 letras
         client.sendMessage(message.from, 'Un asesor experto te contactara en breve.');
-        registro[message.from].etapa = 20;
+        client.sendMessage('573026084428@c.us',  `Este Usuario está esperando un asesor ${message.from}`);
+        registro[message.from].etapa = 20; 
 
       } else if (message.body.toLowerCase() === "no" ) {
         // Verificar si el mensaje tiene más de 2 letras
@@ -212,6 +213,10 @@ client.on('message', async (message) => {
          } else if (message.body.toLowerCase() === "si" ) {
             // Verificar si el mensaje tiene más de 2 letras
             client.sendMessage(message.from, 'Un asesor experto te contactara en breve.');
+            client.sendMessage('573026084428@c.us',  `Este Usuario está esperando un asesor ${message.from}`);
+            
+            
+            
             registro[message.from].etapa = 20;
     
           
