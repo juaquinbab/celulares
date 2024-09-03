@@ -159,7 +159,11 @@ client.on('message', async (message) => {
         client.sendMessage(message.from, '✅ Tecno.\n\n📱1•SPARK Go 2024 64+3 $390.000🇨🇴\n\n📱2•POVA NEO  64+4 $390.000🇨🇴\n\n📱3•SPARK 8P 128+4 $435.000🇨🇴\n\n📱4•SPARK Go 2024 128+4 $440.000🇨🇴\n\n📱5•SPARK 20C 128+4 $470.000 🇨🇴\n\n📱6•SPARK 20C 256+4 $535.000 🇨🇴n\n\n📱7•SPARK 20 256+8 $575.000 🇨🇴\n\n📱8•POVA 6 256+12 $985.000 🇨🇴\n\n\nPor favor escribe el número del celular de tu interes');
         registro[message.from].etapa = 11;
    
-      }
+      } else if (message.body === ('6')) {
+      client.sendMessage(message.from, 'Por favor indíqueme en que marca esta interesa@');
+      registro[message.from].etapa = 12;
+ 
+    }
       break;
 
 
@@ -175,6 +179,19 @@ client.on('message', async (message) => {
 
       }
         break;
+
+
+
+        case 12:
+
+     if (message.body.length > 2) {
+
+        client.sendMessage(message.from, 'Quieres estrenar y pagar a cuotas.\n\nSI\n\nNO');
+        registro[message.from].etapa = 13;
+
+      }
+        break;
+  
   
 
 
