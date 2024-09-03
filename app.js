@@ -136,8 +136,8 @@ client.on('message', async (message) => {
 
     case 0:
 
-    if (!(message.body.toLowerCase() === "1" || message.body.toLowerCase() === "2"  || message.body.toLowerCase() === "3" || message.body.toLowerCase() === "4" || message.body.toLowerCase() === "5" )) {
-      client.sendMessage(message.from, 'Por favor escribe un numero del 1 al 5');
+    if (!(message.body.toLowerCase() === "1" || message.body.toLowerCase() === "2"  || message.body.toLowerCase() === "3" || message.body.toLowerCase() === "4" || message.body.toLowerCase() === "5"  || message.body.toLowerCase() === "6")) {
+      client.sendMessage(message.from, 'Por favor escribe un numero del 1 al 6');
     
      } else if (message.body === ('1')) {
         client.sendMessage(message.from, '✅ Samsung.\n\n📱1•A04 64+4 $450.000 ( Con Cargador ) \n\n📱2•A14 128+4 $599.000🇨🇴\n\n📱3•A15 256+8 $755.000🇨🇴 \n\n📱4•A25 5G 128+6  1 Sim $890.000🇨🇴\n\n📱5•A35 5G 256+8  $1.200.000🇨🇴\n\n📱6•A55 5G 256+8  $1.575.000🇨🇴\n\n\nPor favor escribe el número del celular de tu interes');
