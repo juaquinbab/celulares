@@ -105,7 +105,8 @@ client.on('message', async (message) => {
 
 
   // Este codigo verifica que ya se envio el mensaje de bienvenida
-  if (!registro[message.from]) {
+  if (!registro[message.from.toString()] && !message.from.toString().includes('@g.us') && !message.from.toString().includes('@g.us:')  ) {
+    
     client.sendMessage(message.from, 'Bienvenido a CrediMoviles! ✅\n\nTIENES UN CUPO PREAPROBADO PARA RENOVAR TU CELULAR SIN IMPORTAR QUE NO TENGAS VIDA CREDITICIA O ESTÉS REPORTADO📲 Estrena SOLO CON TU CÉDULA CUOTA INICIAL DEL EQUIPO DESDE $50 Mil PESOS.\n\n\n📍La cuota inicial la entregas cuando recibas tu equipo.\n\n🚨Cual marca de celular deseas estrenar🚨Escribe por favor el numero de tu marca a cotizar.\n\n✅(1) Samsung.\n✅(2) Xiaomi.\n✅(3) Motorola.\n✅(4) Oppo.\n✅(5) Tecno.\n✅(6) OTRA.\n\n\nEscriba el numero de la opción de su interés ');
     
 
