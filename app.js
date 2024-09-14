@@ -89,7 +89,10 @@ let etapa = 0;
 
 const registro = {
 
-
+  '573026084428@c.us': { etapa: 100, numeroDocumento: '' },
+  '573125178454@c.us': { etapa: 100, numeroDocumento: '' },
+  '573026084444@c.us': { etapa: 100, numeroDocumento: '' },
+  '573164205039@c.us': { etapa: 100, numeroDocumento: '' },
 
 }; // Registra los numeros telefono que inician al programa 
 
@@ -141,23 +144,23 @@ client.on('message', async (message) => {
       client.sendMessage(message.from, 'Por favor escribe un numero del 1 al 6');
     
      } else if (message.body === ('1')) {
-        client.sendMessage(message.from, '✅ Samsung.\n\n📱1•A04 64+4 $450.000 ( Con Cargador ) \n\n📱2•A14 128+4 $599.000🇨🇴\n\n📱3•A15 256+8 $755.000🇨🇴 \n\n📱4•A25 5G 128+6  1 Sim $890.000🇨🇴\n\n📱5•A35 5G 256+8  $1.200.000🇨🇴\n\n📱6•A55 5G 256+8  $1.575.000🇨🇴\n\n\nPor favor escribe el número del celular de tu interes');
+        client.sendMessage(message.from, ' ✅SAMSUNG \n\n1 •A04 64+4 $450.000 ( Con Cargador ) 🇨🇴\n\n2 •A05 128+4 $499.000🇨🇴 \n\n3 •A05s 128+4 1 Sim $500.0000🇨🇴\n\n4 •A05s 128+4 $535.0000🇨🇴\n\n5 •A15 256+8 $755.000🇨🇴\n\n6 •A25 5G 128+6  1 Sim $850.000🇨🇴\n\n7 •A35 5G 256+8  $1.150.000🇨🇴\n\n8 •A55 5G 256+8  $1.550.000🇨🇴');
         // client.sendMessage(message.from, mediaFilemp4)
         registro[message.from].etapa = 11;
       } else if (message.body === ('2')) {
-        client.sendMessage(message.from, '✅ Xiaomi\n\n📱1•REDMI A3 64+3 $490.000 🇨🇴 \n\n📱2•REDMI A3x 128+4 $565.000 🇨🇴\n\n📱3•REDMI 13C 128+4 $650.000🇨🇴n\n📱4•REDMI 13C 256+8 $759.000🇨🇴\n\n📱5•NOTE 10S 128+6 $699.000🇨🇴\n\n📱6•NOTE 12 128+6 $795.000 🇨🇴\n\n📱7•NOTE 13 256+8 $899.000 🇨🇴\n\n📱8•POCO M3 Pro 128+6 $799.000🇨🇴\n\n📱9•POCO M5s 256+8 $975.000🇨🇴n\n📱10•POCO M6 Pro 512+12 $1.200.000🇨🇴\n\n\nPor favor escribe el número del celular de tu interes');
+        client.sendMessage(message.from, '✅XIAOMI \n\n1 •REDMI A3 64+3 $365.000 🇨🇴 \n\n2 •REDMI A3x 128+4 $455.000 🇨🇴\n\n3 •REDMI 13C 128+4 $499.000🇨🇴\n\n4 •REDMI 13C 256+4 $540.000🇨🇴\n\n5 •REDMI 13C 256+8 $599.000🇨🇴\n\n6 •REDMI 13  256+8 $715.000🇨🇴\n\n7 •NOTE 10S 128+6 $550.000🇨🇴\n\n8 •NOTE 12 128+6 $650.000 🇨🇴\n\n9 •NOTE 13 128+6 $675.000🇨🇴\n\n10 •NOTE 13 256+8 $790.000 🇨🇴\n\n11 •NOTE 13 PRO 256+8 $985.000🇨🇴\n\n12 •POCO M3 Pro 128+6 $695.000🇨🇴\n\n13 •POCO M5s 256+8 $799.000🇨🇴\n\n14 •POCO M6 Pro 512+12 $1.100.000🇨🇴');
         registro[message.from].etapa = 11;
 
       } else if (message.body === ('3')) {
-        client.sendMessage(message.from, '✅ Motorola.\n\n📱1•MOTO G04s 128+4 $430.000 🇨🇴\n\n📱2•MOTO G14  128+4 $499.000🇨🇴\n\n📱3•MOTO G24 256+4+4 RAM BOOST $599.000 🇨🇴\n\n📱4•MOTO G34 5G 256+8+8 RAM BOOST $789.000 🇨🇴\n\n📱5•MOTO G54 5G 128+8 $670.000🇨🇴\n\n📱6•MOTO EDGE 50 FUSIÓN 5G 256+8+8 RAM BOOST 1.270.000 🇨🇴\n\n\nPor favor escribe el número del celular de tu interes');
+        client.sendMessage(message.from, '✅MOTOROLA\n\n1 •MOTO E14 64+2+2 RAM BOOST $395.000 🇨🇴\n\n2 •MOTO G24 256+4+4 RAM BOOST $599.000 🇨🇴\n\n3 •MOTO G34 5G 256+8+8 RAM BOOST $799.000 🇨🇴\n\n•MOTO EDGE 50 FUSIÓN 5G 256+8+8 RAM BOOST 1.290.000 🇨🇴');
         registro[message.from].etapa = 11;
      
       } else if (message.body === ('4')) {
-        client.sendMessage(message.from, ' ✅ Oppo.\n\n📱1•A58 128+6 $735.000🇨🇴 \n\n📱2•A58 256+8 $859.000 🇨🇴\n\n📱3•RENO 11 5G 256+12 $1.999.000 🇨🇴 \n\n\nQuieres estrenar y pagar a cuotas.\n\nSI\n\nNO');
+        client.sendMessage(message.from, '✅OPPO (GARANTÍA 2 AÑOS + OBSEQUIO 🎁 AUDÍFONOS ) \n\n1 •A38 128+4 $639.000🇨🇴 (+4 Ram Hibrida+ AUDIFONOS)\n\n2 •A58 128+6 $725.000🇨🇴 (+6 Ram Hibrida+ AUDIFONOS)\n\n3 •A58 256+8 $849.000 🇨🇴 (+8 Ram Hibrida + AUDIFONOS )\n\n4 •A79 256+8 $999.000 🇨🇴 (+8 Ram Hibrida + AUDIFONOS )');
         registro[message.from].etapa = 11;
       
       } else if (message.body === ('5')) {
-        client.sendMessage(message.from, '✅ Tecno.\n\n📱1•SPARK Go 2024 64+3 $390.000🇨🇴\n\n📱2•POVA NEO  64+4 $390.000🇨🇴\n\n📱3•SPARK 8P 128+4 $435.000🇨🇴\n\n📱4•SPARK Go 2024 128+4 $440.000🇨🇴\n\n📱5•SPARK 20C 128+4 $470.000 🇨🇴\n\n📱6•SPARK 20C 256+4 $535.000 🇨🇴n\n\n📱7•SPARK 20 256+8 $575.000 🇨🇴\n\n📱8•POVA 6 256+12 $985.000 🇨🇴\n\n\nPor favor escribe el número del celular de tu interes');
+        client.sendMessage(message.from, '✅TECNO \n\n1 •SPARK Go 2024 64+3 $390.000🇨🇴\n\n2 •POVA NEO  64+4 $390.000🇨🇴\n\n3 •SPARK 8P 128+4 $445.000🇨🇴\n\n4 •SPARK 20C 128+4 $480.000 🇨🇴\n\n5 •SPARK 20C 256+4 $570.000🇨🇴\n\n6 •SPARK 20 256+8 $599.000 🇨🇴\n\n7 •SPARK 20 PRO PLUS 256+8 $899.000🇨🇴\n\n8 •POVA 6 256+12 $999.000🇨🇴');
         registro[message.from].etapa = 11;
    
       } else if (message.body === ('6')) {
